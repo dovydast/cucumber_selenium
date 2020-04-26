@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1c0beda9-6912-492c-87e8-80d68eb08a15" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="271" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1b4RgN1Dy2De8K5R6YpVbgI01jO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/test/Feature" />
+    <property name="nodejs.cucumber.cucumber_node_package_dir" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn dependency:tree" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Cucumber java.Feature: openValorantStream">
+    <configuration name="Feature: demo" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="D:\JAVA programming\JAVA\dovisCucumber\src\test\Feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Cucumber_Template_Project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: openTwitch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/Feature/openTwitch.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Cucumber_Template_Project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: openTwitch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: openValorantSectionOnTwitch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/Feature/openValorantSectionOnTwitch.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Cucumber_Template_Project" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: openValorantSectionOnTwitch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Feature: openValorantStream" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/Feature/openValorantStream.feature" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <module name="Cucumber_Template_Project" />
+      <option name="PROGRAM_PARAMETERS" value="--plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
+      <option name="SUGGESTED_NAME" value="Feature: openValorantStream" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cucumber.api.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <option name="FILE_PATH" value="D:\JAVA programming\JAVA\dovisCucumber" />
+      <option name="GLUE" value="stepdefs" />
+      <option name="MAIN_CLASS_NAME" value="cucumber.api.cli.Main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Runner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Cucumber_Template_Project" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Runner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="Cucumber_Template_Project" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
+      <module name="Cucumber_Template_Project" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="filePath" />
+      <option name="vmParameters" />
+      <option name="alternativeJrePath" />
+      <option name="programParameters" />
+      <option name="passParentEnvs" value="true" />
+      <option name="workingDirectory" />
+      <option name="isAlternativeJrePathEnabled" value="false" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Cucumber java.Feature: demo" />
+      <item itemvalue="Cucumber java.Feature: openValorantSectionOnTwitch" />
+      <item itemvalue="Cucumber java.Feature: openTwitch" />
+      <item itemvalue="Cucumber java.Feature: openValorantStream" />
+      <item itemvalue="JUnit.Runner" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Cucumber java.Feature: openValorantStream" />
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber java.Feature: openTwitch" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1c0beda9-6912-492c-87e8-80d68eb08a15" name="Default Changelist" comment="" />
+      <created>1587889489055</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587889489055</updated>
+      <workItem from="1587889497533" duration="16657000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="677" y="189" key="#All_Features_in:_Feature" timestamp="1587891131105">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="189" key="#All_Features_in:_Feature/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587891131105" />
+    <state x="677" y="189" width="580" height="661" key="#Feature:_demo" timestamp="1587892504457">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="189" width="580" height="661" key="#Feature:_demo/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587892504457" />
+    <state x="886" y="168" width="580" height="661" key="#Feature:_openValorantStream" timestamp="1587905733012">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="886" y="168" width="580" height="661" key="#Feature:_openValorantStream/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587905733012" />
+    <state x="677" y="189" key="#Feature:_openValorantStream_(1)" timestamp="1587905018340">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="677" y="189" key="#Feature:_openValorantStream_(1)/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587905018340" />
+    <state x="552" y="177" key="#Project_Structure" timestamp="1587904819744">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="177" key="#Project_Structure/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587904819744" />
+    <state x="557" y="186" key="#Runner" timestamp="1587893483233">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="557" y="186" key="#Runner/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587893483233" />
+    <state x="453" y="280" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1587905800149">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="98" y="185" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587890942637" />
+    <state x="453" y="280" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587905800149" />
+    <state x="700" y="322" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1587892611657">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="700" y="322" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587892611657" />
+    <state x="689" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1587905358627">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="689" y="302" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587905358627" />
+    <state x="424" y="285" key="FileChooserDialogImpl" timestamp="1587905317733">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="424" y="285" key="FileChooserDialogImpl/0.0.1920.1040/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587890864379" />
+    <state x="424" y="285" key="FileChooserDialogImpl/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587905317733" />
+    <state width="1876" height="298" key="GridCell.Tab.0.bottom" timestamp="1587906615253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="298" key="GridCell.Tab.0.bottom/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587906615253" />
+    <state width="1876" height="298" key="GridCell.Tab.0.center" timestamp="1587906615252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="298" key="GridCell.Tab.0.center/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587906615252" />
+    <state width="1876" height="298" key="GridCell.Tab.0.left" timestamp="1587906615252">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="298" key="GridCell.Tab.0.left/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587906615252" />
+    <state width="1876" height="298" key="GridCell.Tab.0.right" timestamp="1587906615253">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1876" height="298" key="GridCell.Tab.0.right/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587906615253" />
+    <state x="833" y="259" key="Maven.ArtifactSearchDialog" timestamp="1587893946609">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="833" y="259" key="Maven.ArtifactSearchDialog/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587893946609" />
+    <state x="627" y="78" width="916" height="738" key="SettingsEditor" timestamp="1587901089365">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="-916" y="14" width="916" height="738" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.900@-1600.0.1600.900" timestamp="1587890669382" />
+    <state x="627" y="78" key="SettingsEditor/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587901089365" />
+    <state x="776" y="297" key="chooseDestDirectoryDialog" timestamp="1587892721890">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="776" y="297" key="chooseDestDirectoryDialog/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587892721890" />
+    <state x="608" y="352" key="com.intellij.ide.util.TipDialog" timestamp="1587889497595">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="608" y="352" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587889497595" />
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup" timestamp="1587901227960">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="235" width="672" height="677" key="run.anything.popup/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587901227960" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1587901085159">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040/-1600.0.1600.900@0.0.1920.1040" timestamp="1587901085159" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/dovisCucumber$SeleniumBase.ic" NAME="SeleniumBase Coverage Results" MODIFIED="1587901603524" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>common.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/dovisCucumber$Feature__openValorantSectionOnTwitch.ic" NAME="Feature: openValorantSectionOnTwitch Coverage Results" MODIFIED="1587905645888" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>cucumber.api.cli.*</FILTER>
+    </SUITE>
+  </component>
+</project>
