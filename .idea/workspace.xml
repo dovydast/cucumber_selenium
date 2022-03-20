@@ -39,7 +39,7 @@
       <recent name="C:\Users\Dovis\Desktop\Automation-framework\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: Validate successful login">
     <configuration name="Feature: Contact_Us" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
@@ -48,26 +48,6 @@
       <module name="Automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
       <option name="SUGGESTED_NAME" value="Feature: Contact_Us" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Validate Successful Submission - Specific Data" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="Automation-framework" />
-      <option name="NAME_FILTER" value="^Validate Successful Submission \- Specific Data$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate Successful Submission \- Specific Data$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate Successful Submission - Specific Data" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -88,6 +68,26 @@
       <option name="NAME_FILTER" value="^Validate successful login alert message \- with created user account$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate successful login alert message \- with created user account$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: Validate successful login alert message - with created user account" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scenario: Validate successful login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="Automation-framework" />
+      <option name="NAME_FILTER" value="^Validate successful login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate successful login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate successful login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -138,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: Validate successful login" />
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Feature: Contact_Us" />
         <item itemvalue="Cucumber Java.Scenario: Validate unsuccessful login alert message - with incorrect user account" />
         <item itemvalue="Cucumber Java.Scenario: Validate successful login alert message - with created user account" />
-        <item itemvalue="Cucumber Java.Feature: Contact_Us" />
-        <item itemvalue="Cucumber Java.Scenario: Validate Successful Submission - Specific Data" />
       </list>
     </recent_temporary>
   </component>
