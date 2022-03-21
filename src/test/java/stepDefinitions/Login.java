@@ -41,38 +41,24 @@ public class Login {
     public void access_the_webdriver_login_page() {
         driver.get("http://www.webdriveruniversity.com/Login-Portal/run.html");
     }
-    @When("enter a specific login name {word}")
-    public void i_enter_a_specific_login_name(String loginName) {
+    @When("enter a login name {word}")
+    public void enter_a_login_name(String loginName) {
         driver.findElement(By.xpath("/html//input[@id='text']")).sendKeys(loginName);
     }
-    @When("enter a specific password {word}")
-    public void i_enter_a_specific_password(String Password) {
+    @When("enter a password {word}")
+    public void enter_a_specific_password(String Password) {
         driver.findElement(By.xpath("/html//input[@id='password']")).sendKeys(Password);
     }
     @And("click on Login button")
-    public void i_click_on_login_button() {
+    public void click_on_login_button() {
         driver.findElement(By.xpath("/html//button[@id='login-button']")).click();
     }
 
-    @When("enter random login name")
-    public void i_enter_random_login_name() {
-        driver.findElement(By.xpath("/html//input[@id='text']")).sendKeys(generateRandomString(10));
-    }
-    @And("enter random password")
-    public void i_enter_random_password() {
-        driver.findElement(By.xpath("/html//input[@id='password']")).sendKeys(generateRandomString(12));
-    }
-    @Then("Alert pop up should be presented with a unsuccessful invalid message - Validation failed")
-    public void alert_pop_up_should_be_presented_with_a_unsuccessful_invalid_message_validation_failed() {
+    @Then("Alert pop up should be presented with the following validation message {}")
+    public void alert_pop_up_should_be_presented_with_the_following_validation_message(String expectedMessage) {
         String login_Message = driver.switchTo().alert().getText();
-        Assert.assertEquals(login_Message, "validation failed");
-
+        Assert.assertEquals(login_Message, expectedMessage);
     }
 
-    @Then("Alert pop up should be presented with a successful valid message - Validation succeeded")
-    public void alert_pop_up_should_be_presented_with_a_successful_valid_message() {
-        String login_Message = driver.switchTo().alert().getText();
-        Assert.assertEquals(login_Message, "validation succeeded");
 
-    }
 }

@@ -1,15 +1,26 @@
 @login
-  Feature: Webdriver University - Login page
-    Scenario: Validate successful login
-      Given Access the webdriver login page
-      When enter a specific login name webdriver
-      And enter a specific password webdriver123
-      And click on Login button
-      Then Alert pop up should be presented with a successful valid message - Validation succeeded
+Feature: Webdriver University - Login page
 
-    Scenario: Validate unsuccessful login
-      Given Access the webdriver login page
-      When enter random login name
-      And enter random password
-      And click on Login button
-      Then Alert pop up should be presented with a unsuccessful invalid message - Validation failed
+  Background:
+    Given Access the webdriver login page
+
+  Scenario: Validate successful login
+    When enter a login name webdriver
+    And enter a password webdriver123
+    And click on Login button
+
+  Scenario: Validate unsuccessful login
+    When enter a login name webdriver
+    And enter a password webdriver1
+    And click on Login button
+
+  Scenario Outline: Validate - successful and unsuccessful login
+    When enter a login name <loginName>
+    And  enter a password <password>
+    And click on Login button
+    Then Alert pop up should be presented with the following validation message <loginValidationMessage>
+
+    Examples:
+      | loginName | password     | loginValidationMessage |
+      | webdriver | webdriver123 | validation succeeded   |
+      | webdriver | webdriver1   | validation failed      |

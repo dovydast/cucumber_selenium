@@ -40,14 +40,14 @@
     </key>
   </component>
   <component name="RunManager" selected="Cucumber Java.Scenario: Validate successful login">
-    <configuration name="Feature: Contact_Us" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Contact_Us.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Automation-framework" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: Contact_Us" />
+      <option name="SUGGESTED_NAME" value="Feature: Login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -59,15 +59,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Validate successful login alert message - with created user account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Validate - successful and unsuccessful login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Automation-framework" />
-      <option name="NAME_FILTER" value="^Validate successful login alert message \- with created user account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate successful login alert message \- with created user account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate successful login alert message - with created user account" />
+      <option name="NAME_FILTER" value="^Validate \- successful and unsuccessful login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate \- successful and unsuccessful login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate - successful and unsuccessful login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -99,15 +99,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Validate unsuccessful login alert message - with incorrect user account" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Validate unsuccessful login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
       <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Automation-framework" />
-      <option name="NAME_FILTER" value="^Validate unsuccessful login alert message \- with incorrect user account$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate unsuccessful login alert message \- with incorrect user account$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate unsuccessful login alert message - with incorrect user account" />
+      <option name="NAME_FILTER" value="^Validate unsuccessful login$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate unsuccessful login$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Validate unsuccessful login" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -139,10 +139,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Cucumber Java.Scenario: Validate successful login" />
+        <item itemvalue="Cucumber Java.Scenario: Validate - successful and unsuccessful login" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="TestNG.MainRunner" />
-        <item itemvalue="Cucumber Java.Feature: Contact_Us" />
-        <item itemvalue="Cucumber Java.Scenario: Validate unsuccessful login alert message - with incorrect user account" />
-        <item itemvalue="Cucumber Java.Scenario: Validate successful login alert message - with created user account" />
+        <item itemvalue="Cucumber Java.Scenario: Validate unsuccessful login" />
       </list>
     </recent_temporary>
   </component>
