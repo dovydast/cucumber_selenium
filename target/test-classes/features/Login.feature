@@ -1,4 +1,4 @@
-@login
+@login @regression
 Feature: Webdriver University - Login page
 
   Background:
@@ -14,6 +14,7 @@ Feature: Webdriver University - Login page
     And enter a password webdriver1
     And click on Login button
 
+  @smoke
   Scenario Outline: Validate - successful and unsuccessful login
     When enter a login name <loginName>
     And  enter a password <password>
@@ -24,3 +25,4 @@ Feature: Webdriver University - Login page
       | loginName | password     | loginValidationMessage |
       | webdriver | webdriver123 | validation succeeded   |
       | webdriver | webdriver1   | validation failed      |
+      | dovis     | dovist       | validation failed      |

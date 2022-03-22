@@ -39,7 +39,7 @@
       <recent name="C:\Users\Dovis\Desktop\Automation-framework\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Validate successful login">
+  <component name="RunManager" selected="TestNG.MainRunner">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -138,10 +138,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Cucumber Java.Scenario: Validate successful login" />
-        <item itemvalue="Cucumber Java.Scenario: Validate - successful and unsuccessful login" />
-        <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Feature: Login" />
+        <item itemvalue="Cucumber Java.Scenario: Validate - successful and unsuccessful login" />
+        <item itemvalue="Cucumber Java.Scenario: Validate successful login" />
         <item itemvalue="Cucumber Java.Scenario: Validate unsuccessful login" />
       </list>
     </recent_temporary>

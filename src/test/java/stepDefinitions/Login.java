@@ -1,39 +1,20 @@
 package stepDefinitions;
 
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.*;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.Assert;
+import static driver.DriverFactory.getDriver;
 
 
 public class Login {
+    private WebDriver driver = getDriver();
 
     public String generateRandomString(int length){
         return RandomStringUtils.randomAlphabetic(length);
-    }
-
-    private WebDriver driver;
-
-
-    @Before("@login")
-    public void setup(){
-        System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir") + "/src/main/java/drivers/chromedriver.exe");
-        ChromeOptions chromeOptions = new ChromeOptions();
-        chromeOptions.setPageLoadStrategy(PageLoadStrategy.NORMAL);
-        driver = new ChromeDriver(chromeOptions);
-        driver.manage().window().maximize();
-    }
-
-    @After("@login")
-    public void exitBrowser(){
-        driver.quit();
     }
 
 
@@ -41,11 +22,11 @@ public class Login {
     public void access_the_webdriver_login_page() {
         driver.get("http://www.webdriveruniversity.com/Login-Portal/run.html");
     }
-    @When("enter a login name {word}")
+    @When("enter a login name {}")
     public void enter_a_login_name(String loginName) {
         driver.findElement(By.xpath("/html//input[@id='text']")).sendKeys(loginName);
     }
-    @When("enter a password {word}")
+    @When("enter a password {}")
     public void enter_a_specific_password(String Password) {
         driver.findElement(By.xpath("/html//input[@id='password']")).sendKeys(Password);
     }
