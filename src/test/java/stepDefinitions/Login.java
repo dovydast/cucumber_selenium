@@ -4,35 +4,40 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.*;
 import org.testng.Assert;
-import static driver.DriverFactory.getDriver;
+import pageObjects.Base_PO;
+import pageObjects.Login_PO;
 
 
-public class Login {
+public class Login extends Base_PO {
     private WebDriver driver = getDriver();
 
-    public String generateRandomString(int length){
-        return RandomStringUtils.randomAlphabetic(length);
+    private Login_PO login_po;
+
+    public Login(Login_PO login_po){
+        this.login_po = login_po;
     }
 
 
     @Given("Access the webdriver login page")
     public void access_the_webdriver_login_page() {
-        driver.get("http://www.webdriveruniversity.com/Login-Portal/run.html");
+        login_po.navigateTo_Login_Page();
     }
     @When("enter a login name {}")
     public void enter_a_login_name(String loginName) {
-        driver.findElement(By.xpath("/html//input[@id='text']")).sendKeys(loginName);
+        //driver.findElement(By.xpath("/html//input[@id='text']")).sendKeys(loginName);
+        login_po.setLoginName(loginName);
     }
     @When("enter a password {}")
     public void enter_a_specific_password(String Password) {
-        driver.findElement(By.xpath("/html//input[@id='password']")).sendKeys(Password);
+       // driver.findElement(By.xpath("/html//input[@id='password']")).sendKeys(Password);
+        login_po.setPassword(Password);
     }
     @And("click on Login button")
     public void click_on_login_button() {
-        driver.findElement(By.xpath("/html//button[@id='login-button']")).click();
+       // waitClick(By.xpath("/html//button[@id='login-button']"));
+        login_po.clickOn_Login_Button();
     }
 
     @Then("Alert pop up should be presented with the following validation message {}")

@@ -1,41 +1,30 @@
 package stepDefinitions;
 
-
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.apache.commons.lang3.RandomStringUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import pageObjects.Base_PO;
 
-import static driver.DriverFactory.getDriver;
 
-
-public class Contact_Us_Steps {
+public class Contact_Us_Steps extends Base_PO {
 
     private WebDriver driver = getDriver();
 
 
-    public String generateRandomNumber(int length){
-        return RandomStringUtils.randomNumeric(length);
-    }
-
-    public String generateRandomString(int length){
-        return RandomStringUtils.randomAlphabetic(length);
-    }
-
-
     @Given("access the webdriver university contact us page")
     public void access_the_webdriver_university_contact_us_page() {
-        driver.get("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
+        navigateTo_URL("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
     }
 
     @When("Enter a unique first name")
     public void enter_a_unique_first_name() {
-        driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='first_name']")).sendKeys("AutoGEN_" + generateRandomNumber(4));
+        //driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='first_name']")).sendKeys("AutoGEN_" + generateRandomNumber(4));
+        sendKeys(By.xpath("//form[@id='contact_form']/input[@name='first_name']"), "AutoGEN_" + generateRandomNumber(4));
     }
 
     @And("Enter a unique last name")
@@ -66,7 +55,6 @@ public class Contact_Us_Steps {
     public void enter_a_specific_email_address(String email) {
         driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='email']")).sendKeys(email);
 
-
     }
     @When("enter a specific comment {string}")
     public void enter_a_specific_comment(String comment) {
@@ -74,10 +62,10 @@ public class Contact_Us_Steps {
 
     }
 
-
     @And("click on the submit button")
     public void click_on_the_submit_button() {
-        driver.findElement(By.xpath("//div[@id='form_buttons']/input[@value='SUBMIT']")).click();
+        //driver.findElement(By.xpath("//div[@id='form_buttons']/input[@value='SUBMIT']")).click();
+        waitClick(By.xpath("//div[@id='form_buttons']/input[@value='SUBMIT']"));
     }
 
     @Then("It has to be presented successful confirmation")
