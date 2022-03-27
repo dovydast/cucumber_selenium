@@ -4,75 +4,75 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.testng.Assert;
 import pageObjects.Base_PO;
+import pageObjects.Contact_Us_PO;
 
 
 public class Contact_Us_Steps extends Base_PO {
 
-    private WebDriver driver = getDriver();
+    private Contact_Us_PO contact_po;
+
+    public Contact_Us_Steps(Contact_Us_PO contact_po) {
+        this.contact_po = contact_po;
+    }
 
 
     @Given("access the webdriver university contact us page")
     public void access_the_webdriver_university_contact_us_page() {
-        navigateTo_URL("http://www.webdriveruniversity.com/Contact-Us/contactus.html");
+        contact_po.navigateTo_ContactUs_Page();
     }
 
     @When("Enter a unique first name")
     public void enter_a_unique_first_name() {
         //driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='first_name']")).sendKeys("AutoGEN_" + generateRandomNumber(4));
-        sendKeys(By.xpath("//form[@id='contact_form']/input[@name='first_name']"), "AutoGEN_" + generateRandomNumber(4));
+        //sendKeys(By.xpath("//form[@id='contact_form']/input[@name='first_name']"), "AutoGEN_" + generateRandomNumber(4));
+        contact_po.setUnique_name();
     }
 
     @And("Enter a unique last name")
     public void enter_a_unique_last_name() {
-        driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='last_name']")).sendKeys("AutoGEN_" + generateRandomNumber(3));
+        contact_po.setLast_name();
     }
 
     @And("Enter unique email address")
     public void enter_unique_email_address() {
-        driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='email']")).sendKeys("AutoEmail" + generateRandomNumber(10) + "@mail.com");
+        contact_po.setEmail();
     }
 
     @And("Enter a unique comment")
     public void enter_a_unique_comment() {
-        driver.findElement(By.xpath("//form[@id='contact_form']/textarea[@name='message']")).sendKeys("Hello " + generateRandomString(11));
+        contact_po.setComment();
     }
 
     @When("enter a specific first name {word}")
     public void enter_a_specific_first_name(String firstName) {
-        driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='first_name']")).sendKeys(firstName);
+        contact_po.setSpecific_FirstName(firstName);
     }
+
     @When("enter a specific last name {word}")
     public void enter_a_specific_last_name(String lastName) {
-        driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='last_name']")).sendKeys(lastName);
-
+        contact_po.setSpecific_LastName(lastName);
     }
+
     @When("enter a specific email address {word}")
     public void enter_a_specific_email_address(String email) {
-        driver.findElement(By.xpath("//form[@id='contact_form']/input[@name='email']")).sendKeys(email);
+        contact_po.setSpecific_Email(email);
 
     }
+
     @When("enter a specific comment {string}")
     public void enter_a_specific_comment(String comment) {
-        driver.findElement(By.xpath("//form[@id='contact_form']/textarea[@name='message']")).sendKeys(comment);
-
+        contact_po.setSpecific_Comment(comment);
     }
 
     @And("click on the submit button")
     public void click_on_the_submit_button() {
-        //driver.findElement(By.xpath("//div[@id='form_buttons']/input[@value='SUBMIT']")).click();
-        waitClick(By.xpath("//div[@id='form_buttons']/input[@value='SUBMIT']"));
+        contact_po.click_submit_button();
     }
 
     @Then("It has to be presented successful confirmation")
     public void it_has_to_show_successful_confirmation() {
-        WebElement Submission_Message = driver.findElement(By.xpath("//div[@id='contact_reply']/h1"));
-        Assert.assertEquals(Submission_Message.getText(), "Thank You for your Message!");
-       System.out.println("Confirmation message: ");
+        contact_po.validateSuccessMessage();
     }
 
 }

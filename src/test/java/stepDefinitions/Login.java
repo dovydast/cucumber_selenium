@@ -4,14 +4,11 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-import org.openqa.selenium.*;
-import org.testng.Assert;
 import pageObjects.Base_PO;
 import pageObjects.Login_PO;
 
 
 public class Login extends Base_PO {
-    private WebDriver driver = getDriver();
 
     private Login_PO login_po;
 
@@ -36,14 +33,12 @@ public class Login extends Base_PO {
     }
     @And("click on Login button")
     public void click_on_login_button() {
-       // waitClick(By.xpath("/html//button[@id='login-button']"));
         login_po.clickOn_Login_Button();
     }
 
     @Then("Alert pop up should be presented with the following validation message {}")
     public void alert_pop_up_should_be_presented_with_the_following_validation_message(String expectedMessage) {
-        String login_Message = driver.switchTo().alert().getText();
-        Assert.assertEquals(login_Message, expectedMessage);
+      login_po.waitForAlert_And_ValitdateText(expectedMessage);
     }
 
 

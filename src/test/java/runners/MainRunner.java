@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(features = {"classpath:features"},glue = {"stepDefinitions"},
-        tags = "@login1",
+        tags = "@contact-us",
         monochrome = false,
         plugin = {"pretty", "html:target/report","json:target/cucumber.json"},
         dryRun = false

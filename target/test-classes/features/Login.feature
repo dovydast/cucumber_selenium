@@ -4,7 +4,7 @@ Feature: Webdriver University - Login page
   Background:
     Given Access the webdriver login page
 
-    @login1
+
   Scenario: Validate successful login
     When enter a login name webdriver
     And enter a password webdriver123
