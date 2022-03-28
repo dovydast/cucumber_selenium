@@ -1,4 +1,4 @@
-@contact-us @regression
+@All @contact-us @regression
 Feature: WebDriver University - Contact Us Page
 
   Background:

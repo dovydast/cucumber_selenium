@@ -1,3 +1,4 @@
+stepDefinitions\Actions.class
 runners\MainRunner.class
 stepDefinitions\Login.class
 stepDefinitions\base\Hooks.class

@@ -50,10 +50,18 @@ public class Base_PO {
         wait.until(ExpectedConditions.elementToBeClickable(by)).click();
     }
 
+    public void waitDrag(WebElement source, WebElement target){
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
+        wait.until(ExpectedConditions.elementToBeClickable(source));
+
+
+    }
+
     public void waitClick(WebElement element) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.elementToBeClickable(element)).click();
     }
+
 
     public void waitForAlert_And_ValitdateText(String text) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
@@ -62,7 +70,7 @@ public class Base_PO {
         Assert.assertEquals(alert_message_text, text);
     }
 
-    public void waitForTextToBeVisible(By by) {
+    public void waitForTextToBeVisible(By by, String text) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
     }
@@ -70,6 +78,13 @@ public class Base_PO {
     public void waitForTextToBeVisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.visibilityOf(element));
+    }
+
+    public void waitForDragResult(WebElement element, String text){
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOf(element));
+        String resultMessage = element.getText();
+        Assert.assertEquals(resultMessage,text);
     }
 
 

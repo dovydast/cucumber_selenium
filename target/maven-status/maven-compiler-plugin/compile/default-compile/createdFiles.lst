@@ -3,3 +3,4 @@ driver\DriverFactory.class
 pageObjects\Base_PO.class
 pageObjects\Contact_Us_PO.class
 utils\Global_Vars.class
+pageObjects\Actions_PO.class
