@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<suite name="Suite" parallel="classes" data-provider-thread-count="2">
+    <test name="Test">
+        <classes>
+            <class name="runners.MainRunner"></class>
+        </classes>
+    </test>
+</suite>

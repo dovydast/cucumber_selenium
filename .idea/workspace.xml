@@ -47,7 +47,7 @@
       <recent name="C:\Users\Dovis\Desktop\Automation-framework\src\test\resources\features" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.MainRunner">
+  <component name="RunManager" selected="TestNG.C:/Users/Dovis/Desktop/Automation-framework/src/test/java/runners/testng/testng.xml">
     <configuration name="Feature: Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
@@ -107,22 +107,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Validate unsuccessful login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Login.feature" />
-      <option name="GLUE" value="stepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+    <configuration name="C:/Users/Dovis/Desktop/Automation-framework/src/test/java/runners/testng/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Automation-framework" />
-      <option name="NAME_FILTER" value="^Validate unsuccessful login$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate unsuccessful login$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate unsuccessful login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/runners/testng/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -146,11 +136,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/Dovis/Desktop/Automation-framework/src/test/java/runners/testng/testng.xml" />
         <item itemvalue="TestNG.MainRunner" />
         <item itemvalue="Cucumber Java.Scenario: Validate successful login" />
         <item itemvalue="Cucumber Java.Feature: Login" />
         <item itemvalue="Cucumber Java.Scenario: Validate - successful and unsuccessful login" />
-        <item itemvalue="Cucumber Java.Scenario: Validate unsuccessful login" />
       </list>
     </recent_temporary>
   </component>

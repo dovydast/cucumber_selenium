@@ -5,9 +5,9 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(features = {"classpath:features"},glue = {"stepDefinitions"},
-        tags = "@contact-us",
-        monochrome = false,
-        plugin = {"pretty", "html:target/report","json:target/cucumber.json"},
+        tags = "",
+        monochrome = true,
+        plugin = {"pretty", "html:test-output","json:target/cucumber-reports/CucumberTestReport.json"},
         dryRun = false
 
 )
