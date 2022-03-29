@@ -15,8 +15,10 @@ public class Actions_PO extends Base_PO{
     WebElement drop_me;
     @FindBy(xpath = "//div[@id='double-click']")
     WebElement double_click;
-
-
+    @FindBy (xpath = "//div[@id='div-hover']/div[3]")
+    WebElement ThirdBox;
+    @FindBy (xpath = "//div[@id='div-hover']/div[3]/div/a[2]")
+    WebElement option2;
     public  Actions_PO(){
         super();
     }
@@ -41,6 +43,20 @@ public class Actions_PO extends Base_PO{
         String defaultColor = double_click.getAttribute("class");
         Assert.assertEquals(defaultColor,"div-double-click double");
         System.out.println(defaultColor);
+    }
+
+    public void HoverThirdBox(){
+        Actions action = new Actions(getDriver());
+        action.moveToElement(ThirdBox).perform();
+    }
+
+    public void selectSecondOption(){
+        waitClick(option2);
+    }
+
+    public void AlertMessage(){
+      waitForAlert_And_ValitdateText("Well done you clicked on the link!");
+
     }
 
 }

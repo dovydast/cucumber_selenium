@@ -20,7 +20,7 @@ Feature: Webdriver University - Login page
     When enter a login name <loginName>
     And  enter a password <password>
     And click on Login button
-    Then Alert pop up should be presented with the following validation message <loginValidationMessage>
+    Then Alert should be presented with the following validation message <loginValidationMessage>
 
     Examples:
       | loginName | password     | loginValidationMessage |

@@ -36,7 +36,7 @@ public class Login extends Base_PO {
         login_po.clickOn_Login_Button();
     }
 
-    @Then("Alert pop up should be presented with the following validation message {}")
+    @Then("Alert should be presented with the following validation message {}")
     public void alert_pop_up_should_be_presented_with_the_following_validation_message(String expectedMessage) {
       login_po.waitForAlert_And_ValitdateText(expectedMessage);
     }

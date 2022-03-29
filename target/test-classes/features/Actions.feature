@@ -8,7 +8,13 @@ Feature: Webdriveruniversity - Drag, Drop, Hover, Click and hold, double click
     When Move small box to targeted Box location
     Then Present with confirmation message
 
-@Double-click
+  @Double-click
   Scenario: Double click function
     When Double click on yellow box
     Then The box has to be green color
+
+  @Hover
+  Scenario: Hover on third box and access second option
+    When Hover the mouse on third box
+    And Click on the second option
+    Then The alert should be presented with confirmation messsage

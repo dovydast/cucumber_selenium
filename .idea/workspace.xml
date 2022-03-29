@@ -88,12 +88,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/Dovis/Desktop/Automation-framework/src/test/java/runners/testng/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Hover on third box and access second option" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Actions.feature" />
+      <option name="GLUE" value="stepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Automation-framework" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/runners/testng/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
+      <option name="NAME_FILTER" value="^Hover on third box and access second option$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Hover on third box and access second option$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Hover on third box and access second option" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -136,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Hover on third box and access second option" />
         <item itemvalue="Cucumber Java.Scenario: Double click function" />
         <item itemvalue="TestNG.MainRunner.runScenario" />
         <item itemvalue="Cucumber Java.Scenario: Drag &amp; Drop verification" />
-        <item itemvalue="TestNG.C:/Users/Dovis/Desktop/Automation-framework/src/test/java/runners/testng/testng.xml" />
       </list>
     </recent_temporary>
   </component>

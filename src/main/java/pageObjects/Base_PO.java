@@ -67,7 +67,9 @@ public class Base_PO {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.alertIsPresent());
         String alert_message_text = getDriver().switchTo().alert().getText();
+        System.out.println(alert_message_text);
         Assert.assertEquals(alert_message_text, text);
+
     }
 
     public void waitForTextToBeVisible(By by, String text) {

@@ -38,4 +38,17 @@ public class Actions {
     public void the_box_has_to_be_green_color() {
         actions_po.colorResult();
     }
+
+    @When("Hover the mouse on third box")
+    public void hover_the_mouse_on_third_box() {
+        actions_po.HoverThirdBox();
+    }
+    @When("Click on the second option")
+    public void click_on_the_second_option() {
+    actions_po.selectSecondOption();
+    }
+    @Then("The alert should be presented with confirmation messsage")
+    public void the_alert_should_be_presented_with_confirmation_messsage() {
+    actions_po.AlertMessage();
+    }
 }
