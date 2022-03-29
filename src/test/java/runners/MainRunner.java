@@ -5,7 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.DataProvider;
 
 @CucumberOptions(features = {"classpath:features"},glue = {"stepDefinitions"},
-        tags = "@Hover",
+        tags = "@Hold",
         monochrome = true,
         plugin = {"pretty", "html:test-output","json:target/cucumber-reports/CucumberTestReport.json"},
         dryRun = false

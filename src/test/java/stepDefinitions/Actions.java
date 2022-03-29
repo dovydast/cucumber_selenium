@@ -25,9 +25,9 @@ public class Actions {
         actions_po.DragAndDrop();
 
     }
-    @Then("Present with confirmation message")
+    @Then("Present with confirmation message{}")
     public void present_with_confirmation_message() {
-        actions_po.validateConfirmationMessage();
+        actions_po.validateDragConfirmationMessage();
     }
 
     @When("Double click on yellow box")
@@ -47,8 +47,18 @@ public class Actions {
     public void click_on_the_second_option() {
     actions_po.selectSecondOption();
     }
-    @Then("The alert should be presented with confirmation messsage")
-    public void the_alert_should_be_presented_with_confirmation_messsage() {
-    actions_po.AlertMessage();
+    @Then("The alert should be presented with confirmation message{}")
+    public void the_alert_should_be_presented_with_confirmation_messsage(String expectedText) {
+    actions_po.AlertMessage(expectedText);
+    }
+
+    @When("Hold left mouse click on orange box")
+    public void hold_left_mouse_click_on_orange_box() {
+        actions_po.HoldLeftMouseClick();
+    }
+    @Then("Display confirmation message{}")
+    public void display_confirmation_message_well_done_keep_holding_that_click_now(String text) {
+        actions_po.validateHoldConfirmMessage(text);
+
     }
 }

@@ -68,15 +68,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Scenario: Drag &amp; Drop verification" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+    <configuration name="Scenario: Hold mouse click - keep holding" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/Actions.feature" />
-      <option name="GLUE" value="stepDefinitions.base" />
+      <option name="GLUE" value="stepDefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="Automation-framework" />
-      <option name="NAME_FILTER" value="^Drag \&amp; Drop verification$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Drag \&amp; Drop verification$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Drag &amp; Drop verification" />
+      <option name="NAME_FILTER" value="^Hold mouse click \- keep holding$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Hold mouse click \- keep holding$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: Hold mouse click - keep holding" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -146,10 +146,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.MainRunner" />
+        <item itemvalue="Cucumber Java.Scenario: Hold mouse click - keep holding" />
         <item itemvalue="Cucumber Java.Scenario: Hover on third box and access second option" />
         <item itemvalue="Cucumber Java.Scenario: Double click function" />
         <item itemvalue="TestNG.MainRunner.runScenario" />
-        <item itemvalue="Cucumber Java.Scenario: Drag &amp; Drop verification" />
       </list>
     </recent_temporary>
   </component>

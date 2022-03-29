@@ -17,4 +17,9 @@ Feature: Webdriveruniversity - Drag, Drop, Hover, Click and hold, double click
   Scenario: Hover on third box and access second option
     When Hover the mouse on third box
     And Click on the second option
-    Then The alert should be presented with confirmation messsage
+    Then The alert should be presented with confirmation message Well done you clicked on the link!
+
+  @Hold
+  Scenario:  Hold mouse click - keep holding
+    When Hold left mouse click on orange box
+    Then Display confirmation message Well done! keep holding that click now.....

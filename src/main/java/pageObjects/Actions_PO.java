@@ -1,5 +1,6 @@
 package pageObjects;
 
+import io.cucumber.java.en_old.Ac;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -19,6 +20,10 @@ public class Actions_PO extends Base_PO{
     WebElement ThirdBox;
     @FindBy (xpath = "//div[@id='div-hover']/div[3]/div/a[2]")
     WebElement option2;
+    @FindBy (xpath = "/html//div[@id='click-box']")
+    WebElement HoldOrangeBox;
+
+
     public  Actions_PO(){
         super();
     }
@@ -31,9 +36,13 @@ public class Actions_PO extends Base_PO{
         (new Actions(getDriver())).dragAndDrop(drag_me, drop_me).perform();
     }
 
-    public void validateConfirmationMessage(){
+    public void validateDragConfirmationMessage(){
       waitForDragResult(drop_me, "Dropped!");
     }
+    public void validateHoldConfirmMessage(String text){
+    waitForTextToBeVisible_String(HoldOrangeBox, text);;
+    }
+
 
     public void doubleClickYellowBox(){
         (new Actions(getDriver())).doubleClick(double_click).perform();
@@ -54,9 +63,12 @@ public class Actions_PO extends Base_PO{
         waitClick(option2);
     }
 
-    public void AlertMessage(){
-      waitForAlert_And_ValitdateText("Well done you clicked on the link!");
+    public void AlertMessage(String text){
+      waitForAlert_And_ValitdateText(text);
+    }
 
+    public void HoldLeftMouseClick(){
+        (new Actions(getDriver())).clickAndHold(HoldOrangeBox).perform();
     }
 
 }

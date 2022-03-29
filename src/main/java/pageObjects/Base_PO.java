@@ -67,14 +67,20 @@ public class Base_PO {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.alertIsPresent());
         String alert_message_text = getDriver().switchTo().alert().getText();
-        System.out.println(alert_message_text);
         Assert.assertEquals(alert_message_text, text);
-
     }
 
     public void waitForTextToBeVisible(By by, String text) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(by));
+    }
+
+    public void waitForTextToBeVisible_String(WebElement element, String expected) {
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOf(element));
+        String ActualMessage = " " + element.getText();
+        System.out.println(ActualMessage);
+        Assert.assertEquals(ActualMessage, expected);
     }
 
     public void waitForTextToBeVisible(WebElement element) {
