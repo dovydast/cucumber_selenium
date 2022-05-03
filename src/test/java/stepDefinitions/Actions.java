@@ -26,8 +26,8 @@ public class Actions {
 
     }
     @Then("Present with confirmation message{}")
-    public void present_with_confirmation_message() {
-        actions_po.validateDragConfirmationMessage();
+    public void present_with_confirmation_message(String text) {
+        actions_po.validateDragConfirmationMessage(text);
     }
 
     @When("Double click on yellow box")

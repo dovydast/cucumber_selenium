@@ -1,5 +1,7 @@
 stepDefinitions\Actions.class
+stepDefinitions\Ajax_loader.class
 runners\MainRunner.class
 stepDefinitions\Login.class
 stepDefinitions\base\Hooks.class
 stepDefinitions\Contact_Us_Steps.class
+stepDefinitions\CompareFiles.class

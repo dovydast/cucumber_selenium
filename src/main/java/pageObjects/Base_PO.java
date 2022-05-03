@@ -88,12 +88,18 @@ public class Base_PO {
         wait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    public void waitForElementVisability(WebElement element){
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
+        wait.until(ExpectedConditions.visibilityOfAllElements(element));
+    }
+
     public void waitForDragResult(WebElement element, String text){
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.visibilityOf(element));
         String resultMessage = element.getText();
         Assert.assertEquals(resultMessage,text);
     }
+
 
 
 }

@@ -3,10 +3,10 @@ Feature: Webdriveruniversity - Drag, Drop, Hover, Click and hold, double click
 
   Background:
     Given Access the webdriver action page
-
+@Drag
   Scenario: Drag & Drop function
     When Move small box to targeted Box location
-    Then Present with confirmation message
+    Then Present with confirmation messageDropped!
 
   @Double-click
   Scenario: Double click function
@@ -17,7 +17,7 @@ Feature: Webdriveruniversity - Drag, Drop, Hover, Click and hold, double click
   Scenario: Hover on third box and access second option
     When Hover the mouse on third box
     And Click on the second option
-    Then The alert should be presented with confirmation message Well done you clicked on the link!
+    Then The alert should be presented with confirmation messageWell done you clicked on the link!
 
   @Hold
   Scenario:  Hold mouse click - keep holding

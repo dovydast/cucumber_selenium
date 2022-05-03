@@ -27,3 +27,4 @@ Feature: Webdriver University - Login page
       | webdriver | webdriver123 | validation succeeded   |
       | webdriver | webdriver1   | validation failed      |
       | dovis     | dovist       | validation failed      |
+

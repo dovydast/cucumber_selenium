@@ -36,8 +36,8 @@ public class Actions_PO extends Base_PO{
         (new Actions(getDriver())).dragAndDrop(drag_me, drop_me).perform();
     }
 
-    public void validateDragConfirmationMessage(){
-      waitForDragResult(drop_me, "Dropped!");
+    public void validateDragConfirmationMessage(String text){
+      waitForDragResult(drop_me, text);
     }
     public void validateHoldConfirmMessage(String text){
     waitForTextToBeVisible_String(HoldOrangeBox, text);;
