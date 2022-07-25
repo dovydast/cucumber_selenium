@@ -1,5 +1,6 @@
 package stepDefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -19,20 +20,26 @@ public class Ajax_loader {
       this.ajax_po.NavigateToPage();
     }
 
-    @Then("Wait for green button appearance")
-        public void WaitForGreenButton(){
-        this.ajax_po.waitForPresence();
-        }
+
     @When("Click on ajax loader")
     public void click_on_ajax_loader() {
         this.ajax_po.ClickButton();
     }
-    @When("Click on green button")
+    @Then("Wait for green button appearance")
+    public void WaitForGreenButton(){
+        this.ajax_po.waitForPresence();
+    }
+    @And("Click on green button")
     public void click_on_green_button() {
         this.ajax_po.ClickGreenButton();
     }
+    @Then("Verify modal-title is correct")
+    public void verify_modal_title_is_correct() {
+        this.ajax_po.Verify_Modal_title();
 
-    @Then("Click to close modal")
+    }
+
+    @And("Click to close modal")
     public void click_to_close_alert() {
         this.ajax_po.CloseModal();
     }

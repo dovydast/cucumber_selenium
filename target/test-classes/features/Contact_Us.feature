@@ -15,7 +15,7 @@ Feature: WebDriver University - Contact Us Page
 
     Scenario: Validate Successful Submission - Specific Data
       When enter a specific first name Dovydas
-      And enter a specific last name Tamulisgt
+      And enter a specific last name Tamulis
       And  enter a specific email address dovydastt@gmail.com
       And enter a specific comment "Hello sir/madam how are you?"
       And click on the submit button

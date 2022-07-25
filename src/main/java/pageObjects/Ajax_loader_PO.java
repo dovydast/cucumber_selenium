@@ -14,6 +14,8 @@ public class Ajax_loader_PO extends Base_PO {
     WebElement greenButton;
     @FindBy(xpath = "/html//div[@id='myModalClick']//div[@class='modal-footer']/button[@type='button']")
     WebElement modal;
+    @FindBy(className = "modal-title")
+    WebElement title;
 
 
     public Ajax_loader_PO(){
@@ -35,6 +37,10 @@ public class Ajax_loader_PO extends Base_PO {
 
     public void ClickGreenButton(){
         waitClick(greenButton);
+    }
+
+    public void Verify_Modal_title(){
+        waitForTextToBeVisible_String(title,"Well Done For Waiting....!!!");
     }
 
    public void CloseModal(){

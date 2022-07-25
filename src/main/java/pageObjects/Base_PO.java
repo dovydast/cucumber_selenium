@@ -78,7 +78,7 @@ public class Base_PO {
     public void waitForTextToBeVisible_String(WebElement element, String expected) {
         WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(Global_Vars.TIMEOUT));
         wait.until(ExpectedConditions.visibilityOf(element));
-        String ActualMessage = " " + element.getText();
+        String ActualMessage = element.getText();
         System.out.println(ActualMessage);
         Assert.assertEquals(ActualMessage, expected);
     }

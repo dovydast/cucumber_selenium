@@ -1,7 +1,5 @@
 package pageObjects;
 
-import io.cucumber.java.en_old.Ac;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -37,10 +35,10 @@ public class Actions_PO extends Base_PO{
     }
 
     public void validateDragConfirmationMessage(String text){
-      waitForDragResult(drop_me, text);
+      waitForDragResult(drop_me,text);
     }
     public void validateHoldConfirmMessage(String text){
-    waitForTextToBeVisible_String(HoldOrangeBox, text);;
+    waitForTextToBeVisible_String(HoldOrangeBox,text);;
     }
 
 

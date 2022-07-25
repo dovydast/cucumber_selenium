@@ -1,4 +1,4 @@
-@All @Actions
+@All @Actions @regression
 Feature: Webdriveruniversity - Drag, Drop, Hover, Click and hold, double click
 
   Background:
@@ -22,4 +22,4 @@ Feature: Webdriveruniversity - Drag, Drop, Hover, Click and hold, double click
   @Hold
   Scenario:  Hold mouse click - keep holding
     When Hold left mouse click on orange box
-    Then Display confirmation message Well done! keep holding that click now.....
+    Then Display confirmation messageWell done! keep holding that click now.....
